@@ -3,6 +3,11 @@
 ルールは [[job-search-report-spec.md]] を参照。
 新しい案件を記録する前に、URL／タイトルが下記にまだ無いことを確認してから追記すること（重複防止）。
 
+## 案件ウォッチボードURL（スマホ確認用）
+https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
+
+新規案件が見つかったら、このURLを指定して `job-board.html` を再publishして更新する（手順は spec.md の「スマホ確認用ページの更新」参照）。
+
 ## チェック済み案件一覧
 - 2026-09-27｜ランサーズ｜交通事故治療LP制作｜https://www.lancers.jp/work/detail/5558028
 - 2026-09-27｜ランサーズ｜クラウドファンディングページ・ティザーサイトのクリエイティブ制作｜https://www.lancers.jp/work/detail/5599905
