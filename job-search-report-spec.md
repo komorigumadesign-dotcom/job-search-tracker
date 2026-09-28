@@ -92,5 +92,7 @@
 - 新着が0件の日は「本日は新着案件なし」と一言だけ記録する（無理に埋めない）。
 
 ## スマホ確認用ページ（Artifactボード）
-さやかさんはスマホで案件・説明・URLを一覧できるページ（Claude Artifact）を持っている。このページはリポジトリ直下の `jobs-latest.json`（GitHub Raw経由）を開くたびに自動で読み込むため、Routine側で毎回publishし直す必要はない。
-新規案件が見つかった場合は、`jobs-latest.json` を**その日見つけた新規案件だけ**でまるごと上書きすること（前回分は残さない。0件の日は `"jobs": []`）。フォーマットとコマンドは `claude-code-routine-prompt.md` の手順9・10を参照。
+さやかさんはスマホで案件・説明・URLを一覧できるページ（Claude Artifact）を持っている。このページは `job-board.html` 内に案件データを直接埋め込む方式。
+
+**注意：Artifactページは外部サイト（GitHub Rawなど）への`fetch`が仕組み上ブロックされるため、「リポジトリにpushするだけでページが自動更新される」ことはない。** 新規案件が見つかった日は、`job-board.html` の `jobs` 配列を更新した上で、Artifactツールの`publish`を必ず実際に呼び出して同じURL（`job-search-check-log.md` 冒頭に記載）に再publishすること。手順の詳細は `claude-code-routine-prompt.md` の手順10・11を参照。
+`jobs-latest.json` はその日の新規案件だけを記録する日々のログ用ファイルであり、スマホ用ページには使わない。
