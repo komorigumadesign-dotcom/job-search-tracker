@@ -272,15 +272,15 @@
 </style>
 
 <header class="top">
-  <div class="eyebrow">JOB SEARCH WATCHBOARD · 2026-09-27</div>
+  <div class="eyebrow">JOB SEARCH WATCHBOARD · 更新: 2026-09-28</div>
   <h1>案件ウォッチボード</h1>
   <p>クラウドワークス・ランサーズ・ココナラの公開案件から、副業向けWebデザイン案件を一次スクリーニング。タップでそのまま案件ページへ移動できます。</p>
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="n">15</div><div class="l">新規案件</div></div>
-  <div class="stat"><div class="n">11</div><div class="l">要確認○</div></div>
-  <div class="stat"><div class="n">4</div><div class="l">見積り△</div></div>
+  <div class="stat"><div class="n">20</div><div class="l">掲載案件</div></div>
+  <div class="stat"><div class="n">13</div><div class="l">要確認○</div></div>
+  <div class="stat"><div class="n">7</div><div class="l">見積り△</div></div>
   <div class="stat"><div class="n">3</div><div class="l">サイト</div></div>
 </div>
 
@@ -295,13 +295,18 @@
 <div class="list" id="list"></div>
 
 <footer>
-  データ元：job-search-check-log.md（2026-09-27 分）。契約形態はプロジェクト／単発依頼＝成果物ベースのみを掲載し、時給制・稼働日数拘束・低単価・実績作り無償の案件は除外済み。詳細はログイン後の案件ページで最終確認してください。
+  データ元：job-search-check-log.md（2026-09-27〜2026-09-28 分）。契約形態はプロジェクト／単発依頼・コンペ（成果物ベース）のみを掲載し、時給制・稼働日数拘束・低単価・実績作り無償の案件は除外済み。コンペ形式は未採用だと無報酬のため要注意。詳細はログイン後の案件ページで最終確認してください。
 </footer>
 
 <script>
 (function(){
   // 新規案件はここに追加し、job-search-check-log.md に無い古い案件は削除する（直近40件を目安に保つ）。
   var jobs = [
+    {site:"lancers",cat:"LP",title:"月額制フェイシャルサロン体験予約LPのSTUDIO制作",price:"200,000円〜",note:"サロン系LP、単価良好。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5608633"},
+    {site:"lancers",cat:"HP",title:"【BtoB営業支援】英語圏向けHP制作依頼",price:"50,000円〜",note:"英語圏向けのため、英語での要件確認が必要になる可能性あり。",contract:"プロジェクト（成果物ベース）",flag:"check",url:"https://www.lancers.jp/work/detail/5608128"},
+    {site:"coconala",cat:"HP",title:"美容系ポータルサイトの制作経験者を募集します",price:"300,000〜400,000円",note:"単価高い。「経験者募集」なので実績アピールが要りそう。",contract:"案件ベース（単発）",flag:"ok",url:"https://coconala.com/requests/5295542"},
+    {site:"lancers",cat:"ロゴ",title:"新規デイサービス「キッチンリハビリステーション もぐもぐ」のロゴデザイン",price:"116,600円",note:"コンペのため未採用だと無報酬。単価自体は高い。",contract:"コンペ形式（採用時のみ報酬）",flag:"check",url:"https://www.lancers.jp/work/detail/5589487"},
+    {site:"lancers",cat:"ロゴ",title:"ネイルサロンのロゴ",price:"55,000円",note:"サロン系。コンペのため未採用リスクあり。",contract:"コンペ形式（採用時のみ報酬）",flag:"check",url:"https://www.lancers.jp/work/detail/5594067"},
     {site:"lancers",cat:"LP",title:"交通事故治療LP制作",price:"30,000〜40,000円",note:"整骨院・治療系LP。参考サイトあり。実績を作りやすい単価帯。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5558028"},
     {site:"lancers",cat:"LP",title:"クラウドファンディングページ・ティザーサイトのクリエイティブ制作",price:"200,000〜300,000円",note:"単価が高く、デザイン重視のクリエイティブ案件。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5599905"},
     {site:"lancers",cat:"LP",title:"リラクゼーションサロンの集客・LP型ホームページ制作",price:"30,000〜40,000円",note:"サロン系。強みを活かしやすい可能性あり。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5600123"},
