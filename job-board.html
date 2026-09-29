@@ -111,7 +111,7 @@
   .summary{
     display:flex;
     gap:8px;
-    margin:16px 0 18px;
+    margin:16px 0 12px;
     overflow-x:auto;
     padding-bottom:2px;
   }
@@ -134,6 +134,25 @@
     font-size:10.5px;
     color:var(--text-dim);
     margin-top:2px;
+  }
+
+  .toolbar{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    margin-bottom:8px;
+    min-height:18px;
+  }
+  #restoreBtn{
+    font-family:inherit;
+    font-size:11.5px;
+    font-weight:700;
+    color:var(--accent);
+    background:none;
+    border:none;
+    padding:2px 0;
+    cursor:pointer;
+    text-decoration:underline;
   }
 
   .tabs{
@@ -172,12 +191,8 @@
     border:1px solid var(--border);
     border-radius:14px;
     padding:14px 15px;
-    text-decoration:none;
-    color:var(--text);
-    display:block;
-    transition:border-color .15s ease;
+    position:relative;
   }
-  .card:active{ border-color:var(--accent); }
 
   .card-top{
     display:flex;
@@ -185,6 +200,12 @@
     justify-content:space-between;
     gap:8px;
     margin-bottom:8px;
+  }
+  .card-top-badges{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    min-width:0;
   }
   .badge{
     font-size:11px;
@@ -205,6 +226,29 @@
   }
   .flag.ok{ background:var(--ok-soft); color:var(--ok); }
   .flag.check{ background:var(--check-soft); color:var(--check); }
+
+  .hideBtn{
+    flex-shrink:0;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:1px solid var(--border);
+    background:var(--surface-2);
+    color:var(--text-dim);
+    font-size:13px;
+    line-height:1;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hideBtn:active{ background:var(--border); }
+
+  a.card-link{
+    text-decoration:none;
+    color:var(--text);
+    display:block;
+  }
 
   .card h2{
     font-size:15.5px;
@@ -259,6 +303,17 @@
     flex-shrink:0;
   }
 
+  .empty-note{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:24px 16px;
+    text-align:center;
+    color:var(--text-dim);
+    font-size:13px;
+    line-height:1.7;
+  }
+
   footer{
     margin-top:22px;
     padding-top:14px;
@@ -278,10 +333,14 @@
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="n">20</div><div class="l">掲載案件</div></div>
-  <div class="stat"><div class="n">13</div><div class="l">要確認○</div></div>
-  <div class="stat"><div class="n">7</div><div class="l">見積り△</div></div>
+  <div class="stat"><div class="n">25</div><div class="l">掲載案件</div></div>
+  <div class="stat"><div class="n">17</div><div class="l">要確認○</div></div>
+  <div class="stat"><div class="n">8</div><div class="l">見積り△</div></div>
   <div class="stat"><div class="n">3</div><div class="l">サイト</div></div>
+</div>
+
+<div class="toolbar">
+  <button id="restoreBtn" type="button" hidden></button>
 </div>
 
 <div class="tabs" id="tabs">
@@ -295,13 +354,18 @@
 <div class="list" id="list"></div>
 
 <footer>
-  データ元：job-search-check-log.md（2026-09-27〜2026-09-28 分）。契約形態はプロジェクト／単発依頼・コンペ（成果物ベース）のみを掲載し、時給制・稼働日数拘束・低単価・実績作り無償の案件は除外済み。コンペ形式は未採用だと無報酬のため要注意。詳細はログイン後の案件ページで最終確認してください。
+  データ元：job-search-check-log.md（2026-09-27〜2026-09-28 分）。契約形態はプロジェクト／単発依頼・コンペ（成果物ベース）のみを掲載し、時給制・稼働日数拘束・低単価・実績作り無償の案件は除外済み。コンペ形式は未採用だと無報酬のため要注意。詳細はログイン後の案件ページで最終確認してください。カード右上の「×」で非表示にできます（このスマホ・ブラウザ内だけの設定です）。
 </footer>
 
 <script>
 (function(){
   // 新規案件はここに追加し、job-search-check-log.md に無い古い案件は削除する（直近40件を目安に保つ）。
   var jobs = [
+    {site:"lancers",cat:"LP",title:"【経験者急募】ニキビケア商材のLPデザイン制作依頼",price:"100,000〜200,000円",note:"美容系LP、単価良好。「経験者急募」なので実績アピールが要りそう。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5606237"},
+    {site:"lancers",cat:"LP",title:"【急募】ニキビケア商材のLPデザインの制作依頼",price:"300,000〜500,000円",note:"単価がかなり高い美容系LP。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5599591"},
+    {site:"lancers",cat:"LP",title:"【研修LP制作】中小企業向けの魅力的な研修紹介を実現",price:"50,000〜100,000円",note:"BtoB研修紹介LP。単価は妥当。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5599962"},
+    {site:"coconala",cat:"HP",title:"BASEショップのデザイン刷新（アミノ酸商材）",price:"50,000〜80,000円",note:"導線・ブランドに合わせたショップデザイン改善。",contract:"案件ベース（単発）",flag:"ok",url:"https://coconala.com/requests/5296082"},
+    {site:"coconala",cat:"HP",title:"Googleマップ連携サイトのリニューアル（約17ページ）",price:"要確認（見積り希望）",note:"AI作成コンセプトを約17ページに反映。詳細は要確認。",contract:"案件ベース（単発）",flag:"check",url:"https://coconala.com/requests/5294782"},
     {site:"lancers",cat:"LP",title:"月額制フェイシャルサロン体験予約LPのSTUDIO制作",price:"200,000円〜",note:"サロン系LP、単価良好。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5608633"},
     {site:"lancers",cat:"HP",title:"【BtoB営業支援】英語圏向けHP制作依頼",price:"50,000円〜",note:"英語圏向けのため、英語での要件確認が必要になる可能性あり。",contract:"プロジェクト（成果物ベース）",flag:"check",url:"https://www.lancers.jp/work/detail/5608128"},
     {site:"coconala",cat:"HP",title:"美容系ポータルサイトの制作経験者を募集します",price:"300,000〜400,000円",note:"単価高い。「経験者募集」なので実績アピールが要りそう。",contract:"案件ベース（単発）",flag:"ok",url:"https://coconala.com/requests/5295542"},
@@ -330,32 +394,94 @@
     crowdworks:{label:"クラウドワークス",cls:"cw"}
   };
 
+  var HIDE_KEY = "watchboard_hidden_urls_v1";
   var listEl = document.getElementById("list");
+  var restoreBtn = document.getElementById("restoreBtn");
+  var currentFilter = "all";
+
+  function jobKey(j){ return j.url || (j.title + "|" + j.site); }
+
+  function loadHidden(){
+    try{
+      var raw = localStorage.getItem(HIDE_KEY);
+      var arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    }catch(e){ return []; }
+  }
+
+  function saveHidden(arr){
+    try{ localStorage.setItem(HIDE_KEY, JSON.stringify(arr)); }catch(e){}
+  }
+
+  function pruneHidden(){
+    var hidden = loadHidden();
+    var validKeys = {};
+    jobs.forEach(function(j){ validKeys[jobKey(j)] = true; });
+    var pruned = hidden.filter(function(k){ return validKeys[k]; });
+    if(pruned.length !== hidden.length) saveHidden(pruned);
+    return pruned;
+  }
+
+  function updateRestoreBtn(){
+    var hidden = loadHidden().filter(function(k){
+      return jobs.some(function(j){ return jobKey(j) === k; });
+    });
+    if(hidden.length > 0){
+      restoreBtn.hidden = false;
+      restoreBtn.textContent = "非表示中の" + hidden.length + "件を元に戻す";
+    } else {
+      restoreBtn.hidden = true;
+    }
+  }
 
   function render(filter){
+    currentFilter = filter;
+    var hidden = loadHidden();
+    var visible = jobs.filter(function(j){ return hidden.indexOf(jobKey(j)) === -1; });
+    var shown = visible.filter(function(j){ return filter === "all" || j.cat === filter; });
+
     listEl.innerHTML = "";
-    jobs.filter(function(j){ return filter === "all" || j.cat === filter; })
-      .forEach(function(j){
-        var m = siteMeta[j.site];
-        var a = document.createElement("a");
-        a.className = "card";
-        a.href = j.url;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        a.innerHTML =
-          '<div class="card-top">' +
+    if(shown.length === 0){
+      listEl.innerHTML = '<div class="empty-note">' + (visible.length === 0 ? "すべて非表示にしました。上の「元に戻す」から復元できます。" : "この条件に合う案件は表示中にありません。") + '</div>';
+      updateRestoreBtn();
+      return;
+    }
+
+    shown.forEach(function(j){
+      var m = siteMeta[j.site];
+      var key = jobKey(j);
+      var card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML =
+        '<div class="card-top">' +
+          '<div class="card-top-badges">' +
             '<span class="badge ' + m.cls + '">' + m.label + '</span>' +
             '<span class="flag ' + (j.flag === "ok" ? "ok" : "check") + '">' + (j.flag === "ok" ? "確認◯" : "見積り△") + '</span>' +
           '</div>' +
+          '<button class="hideBtn" type="button" title="この案件を非表示にする" aria-label="非表示にする">×</button>' +
+        '</div>' +
+        '<a class="card-link" href="' + j.url + '" target="_blank" rel="noopener noreferrer">' +
           '<h2>' + j.title + '</h2>' +
           '<div class="price">' + j.price + '</div>' +
           '<div class="memo">' + j.note + '</div>' +
           '<div class="card-bottom">' +
             '<span class="contract">' + j.contract + '</span>' +
             '<span class="open">案件を開く ›</span>' +
-          '</div>';
-        listEl.appendChild(a);
+          '</div>' +
+        '</a>';
+      card.querySelector(".hideBtn").addEventListener("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var h = loadHidden();
+        if(h.indexOf(key) === -1){
+          h.push(key);
+          saveHidden(h);
+        }
+        render(currentFilter);
       });
+      listEl.appendChild(card);
+    });
+    updateRestoreBtn();
   }
 
   document.getElementById("tabs").addEventListener("click", function(e){
@@ -366,6 +492,12 @@
     render(btn.dataset.filter);
   });
 
+  restoreBtn.addEventListener("click", function(){
+    saveHidden([]);
+    render(currentFilter);
+  });
+
+  pruneHidden();
   render("all");
 })();
 </script>
