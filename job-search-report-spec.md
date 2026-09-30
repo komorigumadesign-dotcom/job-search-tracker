@@ -35,9 +35,12 @@
 ログインが必要な詳細部分までは取得できない前提で、公開されている検索結果・タイトル・概要から候補を広く拾う設計にする。
 
 ### サイト指定検索（site:演算子で精度を上げる）
-- `site:crowdworks.jp LP制作`
-- `site:crowdworks.jp ホームページ制作 業務委託`
-- `site:crowdworks.jp バナーデザイン`
+- `site:crowdworks.jp/public/jobs LP制作`
+- `site:crowdworks.jp/public/jobs ホームページ制作`
+- `site:crowdworks.jp/public/jobs バナーデザイン`
+- `site:crowdworks.jp/public/jobs ロゴ制作`
+
+※クラウドワークスは `site:crowdworks.jp` だけだとカテゴリ一覧・スキル一覧ページばかりヒットし、個別の案件ページ（`/public/jobs/数字`）がほとんど出てこない。`site:crowdworks.jp/public/jobs` とパスまで指定すると個別案件が安定してヒットするため、必ずこちらの形式を使うこと。
 - `site:lancers.jp LP制作 案件`
 - `site:lancers.jp Webデザイナー 募集`
 - `site:lancers.jp SNS画像 デザイン`
