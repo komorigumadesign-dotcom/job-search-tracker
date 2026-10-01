@@ -14,7 +14,7 @@
 - LP制作
 - HP制作（WordPress/Elementor可能なもの優先）
 - Webバナー
-- Instagram画像・SNS画像
+- Instagram画像・SNS画像（投稿デザイン・フィード投稿作成・カルーセル投稿作成など、Instagram投稿そのものの制作案件を含む）
 - LINEリッチメニュー
 - ロゴ・アイコン
 
@@ -39,13 +39,16 @@
 - `site:crowdworks.jp/public/jobs ホームページ制作`
 - `site:crowdworks.jp/public/jobs バナーデザイン`
 - `site:crowdworks.jp/public/jobs ロゴ制作`
+- `site:crowdworks.jp/public/jobs Instagram投稿作成`
 
 ※クラウドワークスは `site:crowdworks.jp` だけだとカテゴリ一覧・スキル一覧ページばかりヒットし、個別の案件ページ（`/public/jobs/数字`）がほとんど出てこない。`site:crowdworks.jp/public/jobs` とパスまで指定すると個別案件が安定してヒットするため、必ずこちらの形式を使うこと。
 - `site:lancers.jp LP制作 案件`
 - `site:lancers.jp Webデザイナー 募集`
 - `site:lancers.jp SNS画像 デザイン`
+- `site:lancers.jp Instagram投稿 作成`
 - `site:coconala.com ホームページ制作 依頼`
 - `site:coconala.com LP制作`
+- `site:coconala.com Instagram投稿 デザイン`
 
 ### 一般検索（サイト指定なし・複合語で新着を広く拾う）
 - 「LP制作 副業 募集 未経験可」
@@ -57,6 +60,9 @@
 - 「Webデザイン 副業 案件 2026」（年は実行時の年に置き換える）
 - 「LP制作 業務委託 1本 単価」
 - 「Webデザイン 業務委託 成果物 報酬」
+- 「Instagram投稿作成 代行 募集」
+- 「インスタ投稿デザイン 外注 募集」
+- 「SNS投稿 画像作成 依頼 単発」
 
 ※「業務委託」で検索すると時給制・常駐系の求人サイト（Indeed・求人ボックス・タウンワーク・スタンバイ・Wantedly等）が多く混ざる。これらは「契約形態の条件」に沿って時給制・稼働日数拘束系を除外し、案件・成果物ベースのものだけを拾う。
 
