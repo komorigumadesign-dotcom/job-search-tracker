@@ -6,7 +6,7 @@
 ## 案件ウォッチボードURL（スマホ確認用）
 https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
 
-このページはリポジトリ直下の `jobs-latest.json` を毎回自動で読み込んで表示する（静的ファイルの再publishは不要）。Routine実行時に `jobs-latest.json` をその日の新規案件だけで上書きしてpushすれば、ページを開いたときに自動で最新化される。
+このページは `job-board.html` 内に案件データを直接埋め込む方式（Artifactは外部サイトへのfetchができないため）。新規案件があった日は `job-board.html` の `jobs` 配列を更新したうえで、Artifactツールの`publish`を実際に呼び出して上記URLに再publishしないと、ページには反映されない。詳細は `job-search-report-spec.md` の「スマホ確認用ページ（Artifactボード）」を参照。
 
 ## チェック済み案件一覧
 - 2026-09-27｜ランサーズ｜交通事故治療LP制作｜https://www.lancers.jp/work/detail/5558028
@@ -30,6 +30,7 @@ https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
 - 2026-09-28｜ランサーズ｜新規デイサービス「キッチンリハビリステーション もぐもぐ」のロゴデザイン｜https://www.lancers.jp/work/detail/5589487
 - 2026-09-28｜ランサーズ｜ネイルサロンのロゴ｜https://www.lancers.jp/work/detail/5594067
 - 2026-09-30｜ココナラ｜初心者・実績少ない方歓迎｜WordPressで1ページLP制作（参考デザイン・原稿あり）｜https://coconala.com/requests/5287683
+- 2026-10-03｜ランサーズ｜【Webデザイン募集】外貨両替店の求人ページ（5ページ・PC/スマホ）｜コーディング不要｜https://www.lancers.jp/work/detail/5611363
 
 ## 日次レポート履歴
 
@@ -79,3 +80,11 @@ https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
 | サイト | 案件タイトル 兼 URL | 契約形態 | 想定単価 | メモ | 確認要否 |
 |---|---|---|---|---|---|
 | ココナラ | [初心者・実績少ない方歓迎｜WordPressで1ページLP制作](https://coconala.com/requests/5287683) | 案件ベース（単発・約1か月） | 要確認（見積り希望） | デザイン・原稿は先方支給で実装中心。基本HTML/CSS必須、応募204名で競争多め。締切10/6 | △ |
+
+### 2026-10-03
+
+ユーザーがランサーズで発見した案件を追加（自動ルーティンの検索では未検出。検索エンジンのインデックス遅延により、掲載当日の案件は拾えないことがあるため）。
+
+| サイト | 案件タイトル 兼 URL | 契約形態 | 想定単価 | メモ | 確認要否 |
+|---|---|---|---|---|---|
+| ランサーズ | [【Webデザイン募集】外貨両替店の求人ページ（5ページ・PC/スマホ）｜コーディング不要](https://www.lancers.jp/work/detail/5611363) | コンペ形式（採用時のみ報酬） | 165,000円 | 本日掲載・提案数0件で狙い目。コーディング不要（デザインのみ）。未採用だと無報酬のため要注意 | △ |
