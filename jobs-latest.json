@@ -1,4 +1,25 @@
 {
-  "date": "2026-10-04",
-  "jobs": []
+  "date": "2026-10-07",
+  "jobs": [
+    {
+      "site": "lancers",
+      "cat": "HP",
+      "title": "建築・内装の金属工事業のコーポレートサイト（TOPデザイン）",
+      "price": "33,000円",
+      "note": "TOPページ1枚のデザインのみ（PSD/JPG納品）。提案4件で競争少なめ。コンペの可能性あり、その場合は未採用だと無報酬。",
+      "contract": "契約形態要確認",
+      "flag": "ok",
+      "url": "https://www.lancers.jp/work/detail/5613226"
+    },
+    {
+      "site": "lancers",
+      "cat": "LP",
+      "title": "高圧洗浄機のLP制作｜デザイン・コーディング・計測環境構築（2パターン）",
+      "price": "100,000〜200,000円（2パターン合計）",
+      "note": "デザイン＋コーディング＋GA4/GTM計測設定まで含む。提案98件と競争激しく、締切間近。",
+      "contract": "見積り募集（成果物ベース）",
+      "flag": "check",
+      "url": "https://www.lancers.jp/work/detail/5613375"
+    }
+  ]
 }
