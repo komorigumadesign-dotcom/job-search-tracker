@@ -33,6 +33,7 @@ https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
 - 2026-10-03｜ランサーズ｜【Webデザイン募集】外貨両替店の求人ページ（5ページ・PC/スマホ）｜コーディング不要｜https://www.lancers.jp/work/detail/5611363
 - 2026-10-07｜ランサーズ｜建築・内装の金属工事業のコーポレートサイト（TOPデザイン）｜https://www.lancers.jp/work/detail/5613226
 - 2026-10-07｜ランサーズ｜高圧洗浄機のLP制作｜デザイン・コーディング・計測環境構築（2パターン）｜https://www.lancers.jp/work/detail/5613375
+- 2026-10-06｜ココナラ｜【貸別荘】Instagram・LINE連携に強いWebサイト・集客システム構築｜https://coconala.com/requests/5306675
 
 ## 日次レポート履歴
 
