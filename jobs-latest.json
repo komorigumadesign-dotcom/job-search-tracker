@@ -1,4 +1,25 @@
 {
-  "date": "2026-10-04",
-  "jobs": []
+  "date": "2026-10-09",
+  "jobs": [
+    {
+      "site": "coconala",
+      "cat": "HP",
+      "title": "【スポット依頼】Googleサイトによるホームページ（会計・コンサル系）の制作",
+      "price": "80,000〜100,000円",
+      "note": "全5ページ・Googleサイト必須（WordPressではない）。制作経験の必須記載なし。応募98人・締切10/23。",
+      "contract": "スポット依頼（単発・成果物ベース）",
+      "flag": "check",
+      "url": "https://coconala.com/requests/5316878"
+    },
+    {
+      "site": "lancers",
+      "cat": "ロゴ",
+      "title": "こずえ動物病院のロゴ作成（新規開院）",
+      "price": "55,000円",
+      "note": "コンペ形式のため未採用だと無報酬。検索スナップショットでは募集中だが残日数が不明確、募集状況要確認。",
+      "contract": "コンペ形式（採用時のみ報酬）",
+      "flag": "check",
+      "url": "https://www.lancers.jp/work/detail/5584465"
+    }
+  ]
 }
