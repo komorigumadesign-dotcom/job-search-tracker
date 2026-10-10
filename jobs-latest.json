@@ -1,4 +1,15 @@
 {
-  "date": "2026-10-04",
-  "jobs": []
+  "date": "2026-10-10",
+  "jobs": [
+    {
+      "site": "coconala",
+      "cat": "HP",
+      "title": "【スポット依頼】Googleサイトによるホームページ（会計・コンサル系）の制作",
+      "price": "80,000〜100,000円",
+      "note": "5ページ程度・Googleサイト必須（WordPress不要）。経験条件の記載なし。応募137人と競争は多め。締切10/23",
+      "contract": "スポット依頼（案件ベース）",
+      "flag": "check",
+      "url": "https://coconala.com/requests/5316878"
+    }
+  ]
 }
