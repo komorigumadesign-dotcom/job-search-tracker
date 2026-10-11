@@ -1,4 +1,25 @@
 {
-  "date": "2026-10-04",
-  "jobs": []
+  "date": "2026-10-11",
+  "jobs": [
+    {
+      "site": "coconala",
+      "cat": "HP",
+      "title": "【スポット依頼】Googleサイトによるホームページ（会計・コンサル系）の制作",
+      "price": "80,000〜100,000円",
+      "note": "5ページ程度のコーポレートサイト。Googleサイト必須（WordPress不可）。経験要件の記載なし、応募152名と競争多め。締切10/23。",
+      "contract": "案件ベース（スポット）",
+      "flag": "check",
+      "url": "https://coconala.com/requests/5316878"
+    },
+    {
+      "site": "coconala",
+      "cat": "HP",
+      "title": "【貸別荘】Instagram・LINE連携に強いWebサイト・集客システム構築",
+      "price": "150,000〜200,000円",
+      "note": "WordPress可。サイト制作に加え予約システム・API・LINE連携も含み範囲が広い。経験者優遇、応募199名。締切10/18。",
+      "contract": "案件ベース（納品後の保守契約なし）",
+      "flag": "check",
+      "url": "https://coconala.com/requests/5306675"
+    }
+  ]
 }
