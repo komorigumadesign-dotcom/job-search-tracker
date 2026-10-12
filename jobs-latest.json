@@ -1,25 +1,15 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "jobs": [
     {
       "site": "coconala",
       "cat": "HP",
-      "title": "【スポット依頼】Googleサイトによるホームページ（会計・コンサル系）の制作",
-      "price": "80,000〜100,000円",
-      "note": "5ページ程度のコーポレートサイト。Googleサイト必須（WordPress不可）。経験要件の記載なし、応募152名と競争多め。締切10/23。",
-      "contract": "案件ベース（スポット）",
+      "title": "スイスのテイクアウト店（寿司・ポケ・麺）のホームページ作り直し＋オンライン注文（Wix）",
+      "price": "要確認（見積り希望）",
+      "note": "Wix必須（WordPress不可）、フランス語サイト、決済・注文通知設定込み。見積り希望で内訳提示を求められる。経験者優遇（必須ではない）、応募42名。締切10/18。継続依頼あり。",
+      "contract": "単発（継続依頼あり）",
       "flag": "check",
-      "url": "https://coconala.com/requests/5316878"
-    },
-    {
-      "site": "coconala",
-      "cat": "HP",
-      "title": "【貸別荘】Instagram・LINE連携に強いWebサイト・集客システム構築",
-      "price": "150,000〜200,000円",
-      "note": "WordPress可。サイト制作に加え予約システム・API・LINE連携も含み範囲が広い。経験者優遇、応募199名。締切10/18。",
-      "contract": "案件ベース（納品後の保守契約なし）",
-      "flag": "check",
-      "url": "https://coconala.com/requests/5306675"
+      "url": "https://coconala.com/requests/5322238"
     }
   ]
 }
