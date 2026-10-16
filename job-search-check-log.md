@@ -35,6 +35,7 @@ https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
 - 2026-10-11｜ココナラ｜【貸別荘】Instagram・LINE連携に強いWebサイト・集客システム構築｜https://coconala.com/requests/5306675
 - 2026-10-12｜ココナラ｜スイスのテイクアウト店（寿司・ポケ・麺）のホームページ作り直し＋オンライン注文（Wix）｜https://coconala.com/requests/5322238
 - 2026-10-16｜ココナラ｜インタラクティブなポートフォリオサイト制作｜https://coconala.com/requests/5328470
+- 2026-10-14｜ココナラ｜LPデザインのブラッシュアップと公開作業担当者を募集します｜https://coconala.com/requests/5322756（ボード掲載済み・ログ追記漏れ補完）
 - 2026-10-16｜ココナラ｜【WEBデザイナー募集】ホームページ制作でご協力いただけるパートナーを複数名募集しています｜https://coconala.com/requests/5322990
 
 ## 日次レポート履歴
