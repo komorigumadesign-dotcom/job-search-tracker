@@ -36,6 +36,7 @@ https://claude.ai/artifact/AUxYKrPqeXkqNFCuUzWeUH
 - 2026-10-12｜ココナラ｜スイスのテイクアウト店（寿司・ポケ・麺）のホームページ作り直し＋オンライン注文（Wix）｜https://coconala.com/requests/5322238
 - 2026-10-17｜ココナラ｜企業の紹介サイト制作（拡張性重視）｜https://coconala.com/requests/5331029
 - 2026-10-17｜ココナラ｜警備員募集用のホームページ制作をお願いします｜https://coconala.com/requests/5329433
+- 2026-10-20｜ココナラ｜【WEBデザイナー様募集】ホームページ制作でご協力いただけるパートナー様を複数名募集しています｜https://coconala.com/requests/5332093
 - 2026-10-21｜ココナラ｜Studioで採用サイトの型を作ってくださる女性の方を募集します！｜https://coconala.com/requests/5337385
 
 ## 日次レポート履歴
