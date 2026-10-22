@@ -333,8 +333,8 @@
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="n">41</div><div class="l">掲載案件</div></div>
-  <div class="stat"><div class="n">22</div><div class="l">要確認○</div></div>
+  <div class="stat"><div class="n">40</div><div class="l">掲載案件</div></div>
+  <div class="stat"><div class="n">21</div><div class="l">要確認○</div></div>
   <div class="stat"><div class="n">19</div><div class="l">見積り△</div></div>
   <div class="stat"><div class="n">3</div><div class="l">サイト</div></div>
 </div>
@@ -361,7 +361,8 @@
 (function(){
   // 新規案件はここに追加し、job-search-check-log.md に無い古い案件は削除する（直近40件を目安に保つ）。
   var jobs = [
-    {site:"coconala",cat:"HP",title:"Studioで採用サイトの型を作ってくださる女性の方を募集します！",price:"40,000〜80,000円",note:"STUDIOで採用サイトのテンプレート9ページ（職種・インタビュー等はCMSで増やせる形、PC/スマホ対応）。女性限定・経験者優遇（必須ではない）。掲載10/21・締切10/26、応募41名。",contract:"単発（納品・検収ベース）",flag:"ok",url:"https://coconala.com/requests/5337385"},
+    {site:"coconala",cat:"HP",title:"Studioで採用サイトの型を作ってくださる女性の方を募集します！",price:"40,000〜80,000円（一式・税抜。掲載欄は5〜8万円）",note:"Studioで採用サイトのテンプレート9ページ（CMS・スマホ固定応募ボタン・コンポーネント化）。ワイヤー不要、コーディング不要。経験者優遇（必須ではない）、女性限定募集。掲載10/21・締切10/26、応募27名。",contract:"単発（成果物ベース・契約形態は明記なし）",flag:"ok",url:"https://coconala.com/requests/5337385"},
+    {site:"coconala",cat:"LP",title:"【WEBデザイナー様募集】ホームページ制作でご協力いただけるパートナー様を複数名募集しています",price:"LP約30,000円／5ページ約30,000円（初回目安・見積り希望）",note:"同クライアントの継続パートナー募集（過去にも同趣旨の募集あり）。初回目安はLP約30,000円／5ページ約30,000円、継続で上限100,000円。Figma納品・AI不使用・修正無制限・NDA・本人確認済み必須と条件は厳しめ。初心者OK／経験者優遇。締切10/23、応募38名。",contract:"継続前提のパートナー募集（個別発注。契約形態要確認）",flag:"check",url:"https://coconala.com/requests/5332093"},
     {site:"coconala",cat:"HP",title:"【予算上限10万円】Wixサイト全面リニューアル｜SEO・アクセス解析・集客改善に強い方募集",price:"80,000〜100,000円",note:"京都のパーソナルジムWixサイト全面リニューアル。SEO分析・GA4/GSC・Wix CMS構築まで含み範囲広め。経験者優遇、応募84名。掲載10/22・締切10/31。",contract:"単発（継続依頼あり）",flag:"check",url:"https://coconala.com/requests/5338865"},
     {site:"coconala",cat:"HP",title:"公式サイトのトップページを制作していただける方を募集します",price:"20,000円",note:"参考画像どおりのトップ1ページのコーディング中心。WordPress指定だが納品形式（HTML/WP）は不明。初心者OK・経験者優遇、応募86名。掲載10/22・締切10/29。単価低め。",contract:"単発（契約形態要確認）",flag:"check",url:"https://coconala.com/requests/5339131"},
     {site:"coconala",cat:"HP",title:"企業の紹介サイト制作（拡張性重視）",price:"80,000〜100,000円",note:"請負会社のコーポレートサイト。WordPress必須、将来のページ増設前提の看板サイト。経験者優遇（必須ではない）。掲載10/17・締切10/31、応募96名。",contract:"単発（成果物ベース）",flag:"ok",url:"https://coconala.com/requests/5331029"},
@@ -399,9 +400,7 @@
     {site:"coconala",cat:"HP",title:"WordPress(SWELL)BtoB企業サイト全面リニューアル",price:"要確認（見積り希望）",note:"WordPress対応案件。制作環境と合致。",contract:"案件ベース（単発）",flag:"check",url:"https://coconala.com/requests/5263765"},
     {site:"coconala",cat:"HP",title:"建設業(電気工事)のホームページ作成",price:"200,000〜250,000円",note:"単価良好なHP制作。",contract:"案件ベース（単発）",flag:"ok",url:"https://coconala.com/requests/5248972"},
     {site:"coconala",cat:"バナー",title:"越境ECサイトのロゴ・ヘッダー・カテゴリー画像等クリエイティブ一式",price:"50,000〜80,000円",note:"ロゴ＋バナー系をまとめて発注、単価良好。",contract:"案件ベース（単発）",flag:"ok",url:"https://coconala.com/requests/5260734"},
-    {site:"coconala",cat:"バナー",title:"完全個室ジムのInstagramカルーセルバナー制作（5枚1セット）",price:"18,000〜20,000円",note:"SNS用バナー5枚セット。単価はまずまず。",contract:"案件ベース（単発）",flag:"check",url:"https://coconala.com/requests/5286277"},
-    {site:"lancers",cat:"ロゴ",title:"AI活用の人事コンサル「EaseFound」のロゴ",price:"50,000〜60,000円",note:"ロゴ単体で単価良好。",contract:"プロジェクト（成果物ベース）",flag:"ok",url:"https://www.lancers.jp/work/detail/5570777"},
-    {site:"coconala",cat:"ロゴ",title:"ゲームに登場する架空企業のロゴデザイン",price:"30,000〜50,000円",note:"ニッチだが単価は妥当。",contract:"案件ベース（単発）",flag:"check",url:"https://coconala.com/requests/5294304"}
+    {site:"coconala",cat:"バナー",title:"完全個室ジムのInstagramカルーセルバナー制作（5枚1セット）",price:"18,000〜20,000円",note:"SNS用バナー5枚セット。単価はまずまず。",contract:"案件ベース（単発）",flag:"check",url:"https://coconala.com/requests/5286277"}
   ];
 
   var siteMeta = {
